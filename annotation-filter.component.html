@@ -1,0 +1,16 @@
+<mat-form-field>
+  <mat-label>Type de Modèle</mat-label>
+  <mat-select [(value)]="selectedModelType">
+    <mat-option value="classification">Classification</mat-option>
+    <mat-option value="segmentation">Segmentation</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field>
+  <mat-label>Classes Prédites</mat-label>
+  <mat-select [(value)]="selectedClasses" multiple>
+    <mat-option *ngFor="let class of availableClasses" [value]="class">{{ class }}</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<button mat-raised-button color="primary" (click)="applyFilters()">Appliquer</button>
