@@ -1,0 +1,24 @@
+<div>
+  <h2>Filtrage des images</h2>
+
+  <label>Type de modèle :</label>
+  <select [(ngModel)]="selectedModelType">
+    <option *ngFor="let type of modelTypes" [value]="type">{{ type }}</option>
+  </select>
+
+  <label>Classes prédites :</label>
+  <div *ngFor="let cls of availableClasses">
+    <input type="checkbox" [value]="cls" (change)="toggleClass(cls, $event)" />
+    {{ cls }}
+  </div>
+
+  <button (click)="applyFilter()">Filtrer</button>
+
+  <div *ngIf="filteredImages.length > 0">
+    <h3>Résultats :</h3>
+    <div *ngFor="let img of filteredImages">
+      <img [src]="img.url" [alt]="img.class" width="200" />
+      <p>{{ img.class }}</p>
+    </div>
+  </div>
+</div>
