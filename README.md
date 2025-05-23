@@ -43,8 +43,10 @@ Une interface permet de :
                 └── image-filter.component.css
 
   
-4 Planning des commits GitHub (8 commits sur 4 jours)
-Jour	Objectif	Commit 1	Commit 2
+4 . Planning 
+
+
+
 J1	Setup & compréhension	
                           Clone et lecture du projet	
                                                       Ajout des composants de base Angular
