@@ -1,11 +1,11 @@
 # PlantAI - Système de Filtrage (Type de Modèle + Classe Prédite)
 
- 1. 📌 Objectif
+ 1.  Objectif
 Cette version ajoute un système de filtres pour permettre à l’administrateur de filtrer les images selon :
 - Le type de modèle IA (classification, segmentation…)
 - La ou les classes prédites (ex : lisse, dentée…)
 
-2 . 🚀 Installation
+2 . Installation
 
  2.1 Backend (Spring Boot)
 ```bash
@@ -48,11 +48,21 @@ Jour	Objectif	Commit 1	Commit 2
 J1	Setup & compréhension	
                           Clone et lecture du projet	
                                                       Ajout des composants de base Angular
+
+
+                                                      
 J2	Backend filtrage	
                           Création de l’API de filtre côté Spring	
                                                                 Test de l’API avec Postman
+
+
+                                                                
 J3	Frontend 
                               filtrage	Connexion Angular ↔ 
                                                                API	Affichage dynamique des images
+
+
+
+                                                               
 J4	Finitions             & doc	Ajout du README
                                                 + rapport PDF	Refacto + derniers tests
